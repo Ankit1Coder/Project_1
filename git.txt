@@ -8,3 +8,7 @@ Git pull
 
 git pull
 
+Git restore(If you made any change and I have also made a change but without any push or pull)
+WRITE THIS IF ANY ERROR SHOWS( THIS WILL RESET ALL THE THING)
+
+git restore .
