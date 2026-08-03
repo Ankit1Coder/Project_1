@@ -7,12 +7,11 @@
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    color:white;
-    background:url("space.jpg") center/cover no-repeat fixed;
-    min-height:100vh;
-    overflow-x:hidden;
-    position:relative;
+    background-image: url("space/image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Dark Overlay */
@@ -459,3 +458,4 @@ footer p{
     }
 
 }
+
