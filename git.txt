@@ -1,10 +1,10 @@
-Git push
+Git push-
 
 git add .
 git commit -m "Describe changes"
 git push
 
-Git pull
+Git pull-
 
 git pull
 
