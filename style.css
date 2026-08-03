@@ -1,3 +1,461 @@
+/* -------------------- GOOGLE FONT -------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    background-color: rgb(0, 149, 249);
+    font-family:'Poppins',sans-serif;
+    color:white;
+    background:url("space.jpg") center/cover no-repeat fixed;
+    min-height:100vh;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* Dark Overlay */
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(
+        rgba(0,0,20,.75),
+        rgba(0,0,40,.75)
+    );
+    z-index:-1;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    z-index:100;
+}
+
+.logo{
+    font-family:'Orbitron',sans-serif;
+    font-size:30px;
+    font-weight:700;
+    color:#00e5ff;
+    text-shadow:0 0 12px #00e5ff;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#00e5ff;
+    text-shadow:0 0 12px cyan;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:120px 20px;
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:65px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+    text-shadow:
+    0 0 15px cyan,
+    0 0 40px blue;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#ddd;
+
+    line-height:1.7;
+
+    margin-bottom:40px;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+button{
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    font-size:17px;
+
+    padding:15px 38px;
+
+    border-radius:50px;
+
+    border:none;
+
+    font-weight:600;
+
+}
+
+.primary{
+
+    background:#00e5ff;
+
+    color:black;
+
+    box-shadow:0 0 25px cyan;
+
+}
+
+.primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 20px cyan,
+    0 0 45px cyan;
+
+}
+
+.secondary{
+
+    background:transparent;
+
+    color:white;
+
+    border:2px solid #00e5ff;
+
+}
+
+.secondary:hover{
+
+    background:#00e5ff;
+
+    color:black;
+
+}
+
+/* ---------------- BOOKING CARD ---------------- */
+
+.booking-card{
+
+    width:85%;
+
+    margin:auto;
+
+    margin-top:-120px;
+
+    margin-bottom:90px;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 0 30px rgba(0,229,255,.15);
+
+}
+
+.booking-card h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-family:'Orbitron';
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+}
+
+input,
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:none;
+
+    outline:none;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+input::placeholder{
+
+    color:#ddd;
+
+}
+
+.search-btn{
+
+    margin-top:35px;
+
+    width:100%;
+
+    background:#00e5ff;
+
+    color:black;
+
+    font-weight:bold;
+
+}
+
+.search-btn:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* ---------------- FEATURES ---------------- */
+
+.features{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-bottom:100px;
+
+}
+
+.card{
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px cyan;
+
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    font-family:'Orbitron';
+
+}
+
+.card p{
+
+    color:#ddd;
+
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    padding:45px;
+
+    text-align:center;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+footer h3{
+
+    color:#00e5ff;
+
+    margin-bottom:10px;
+
+    font-family:'Orbitron';
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+    color:#ccc;
+
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:950px){
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .features{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:18px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+    }
+
+    .booking-card{
+
+        width:95%;
+
+        padding:25px;
+
+    }
+
 }
