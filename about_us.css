@@ -1,127 +1,416 @@
+/* ==========================================
+   THE COSMIC HORIZON
+   ABOUT US PAGE
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ================= RESET ================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#050816;
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(2,8,25,.85)),
+    url("space/image.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
     color:white;
-    line-height:1.6;
+
+    overflow-x:hidden;
+
 }
 
+/* ================= HERO ================= */
+
 .hero{
+
     height:60vh;
-    background:
-        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-        url("space.jpg") center/cover;
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
+
     text-align:center;
+
+    padding:20px;
+
 }
 
 .hero h1{
-    font-size:4rem;
-    color:#7de3ff;
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:60px;
+
+    color:#00e5ff;
+
+    text-shadow:
+    0 0 15px #00e5ff,
+    0 0 35px #00e5ff;
+
+    margin-bottom:15px;
+
 }
 
 .hero p{
-    margin-top:15px;
-    font-size:1.4rem;
-    color:#ddd;
+
+    font-size:22px;
+
+    color:#dddddd;
+
 }
 
-.about{
-    width:80%;
-    margin:70px auto;
+/* ================= SECTIONS ================= */
+
+section{
+
+    padding:90px 8%;
+
+}
+
+section h2{
+
     text-align:center;
+
+    font-family:'Orbitron',sans-serif;
+
+    color:#00e5ff;
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
 }
 
-.about h2{
-    color:#7de3ff;
-    margin-bottom:20px;
-    font-size:2.5rem;
+section p{
+
+    text-align:center;
+
+    line-height:1.9;
+
+    color:#dddddd;
+
+    max-width:900px;
+
+    margin:auto;
+
 }
 
-.mission{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-    padding:40px;
-}
+/* ================= GLASS CARD ================= */
 
 .card{
-    background:#111a33;
-    width:350px;
-    padding:30px;
-    border-radius:15px;
-    border:1px solid #7de3ff;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:35px;
+
     transition:.4s;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.35);
+
 }
 
 .card:hover{
+
     transform:translateY(-10px);
-    box-shadow:0 0 20px #44d8ff;
+
+    box-shadow:
+    0 0 25px rgba(0,229,255,.45);
+
 }
 
-.features{
-    text-align:center;
-    padding:60px 30px;
+/* ================= MISSION ================= */
+
+.mission{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
 }
 
-.features h2{
-    font-size:2.5rem;
-    color:#7de3ff;
-    margin-bottom:40px;
+.mission .card h2{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
 }
+
+/* ================= FEATURES ================= */
 
 .feature-grid{
+
+    margin-top:50px;
+
     display:grid;
+
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+
+    gap:30px;
+
 }
 
 .feature{
-    background:#10192d;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(14px);
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.1);
+
     padding:30px;
-    border-radius:15px;
-    transition:.3s;
+
+    transition:.4s;
+
+    text-align:center;
+
 }
 
 .feature:hover{
-    background:#1b2d54;
-    transform:scale(1.05);
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px rgba(0,229,255,.5);
+
 }
 
-.team{
-    text-align:center;
-    padding:60px;
+.feature h3{
+
+    color:#00e5ff;
+
+    margin-bottom:15px;
+
+    font-family:'Orbitron';
+
 }
+
+/* ================= TEAM ================= */
 
 .crew{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:25px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
     margin-top:40px;
+
 }
 
 .member{
-    width:250px;
-    background:#10192d;
-    padding:25px;
-    border-radius:15px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
 }
 
+.member:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px rgba(0,229,255,.5);
+
+}
+
+.member h3{
+
+    color:#00e5ff;
+
+    margin-bottom:10px;
+
+    font-family:'Orbitron';
+
+}
+
+.member p{
+
+    color:#dddddd;
+
+}
+
+/* ================= FOOTER ================= */
+
 footer{
-    margin-top:60px;
-    background:#000;
+
+    background:#020612;
+
+    padding:40px 20px;
+
     text-align:center;
-    padding:30px;
-    color:#7de3ff;
-    font-style:italic;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+footer p{
+
+    color:#cccccc;
+
+    margin-bottom:20px;
+
+}
+
+footer img{
+
+    display:block;
+
+    margin:25px auto;
+
+    width:160px;
+
+}
+
+.footer-nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-nav a:hover{
+
+    color:#00e5ff;
+
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08111f;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00e5ff;
+
+    border-radius:30px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .hero{
+
+        height:50vh;
+
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    section{
+
+        padding:70px 6%;
+
+    }
+
+    section h2{
+
+        font-size:30px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .footer-nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
 }
