@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cosmic Horizon | Booking</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="booking_style.css">
@@ -33,58 +36,34 @@
 
             <div class="form-group">
                 <label for="fullname">Guest Name</label>
-                <input
-                    type="text"
-                    id="fullname"
-                    placeholder="Enter your full name"
-                    required>
+                <input type="text" id="fullname" placeholder="Enter your full name" required>
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="example@gmail.com"
-                    required>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
             </div>
 
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    placeholder="+91 XXXXX XXXXX"
-                    required>
+                <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required>
             </div>
 
             <div class="form-group">
                 <label for="guests">Number of Guests</label>
-                <input
-                    type="number"
-                    id="guests"
-                    min="1"
-                    max="10"
-                    value="1"
-                    required>
+                <input type="number" id="guests" min="1" max="10" value="1" required>
             </div>
 
             <!-- Stay Details -->
 
             <div class="form-group">
                 <label for="checkin">Check-in Date</label>
-                <input
-                    type="date"
-                    id="checkin"
-                    required>
+                <input type="date" id="checkin" required>
             </div>
 
             <div class="form-group">
                 <label for="checkout">Check-out Date</label>
-                <input
-                    type="date"
-                    id="checkout"
-                    required>
+                <input type="date" id="checkout" required>
             </div>
 
             <div class="form-group">
@@ -156,12 +135,21 @@
 
                 </label>
 
-                <textarea
-                    id="request"
-                    rows="4"
-                    placeholder="Write your special request here...">
+                <textarea id="request" rows="4" placeholder="Write your special request here...">
                 </textarea>
 
+            </div>
+            <div class="form-group">
+                <label for="package">
+                    Package
+                </label>
+
+                <select id="package" name="package">
+                    <option value="" disabled selected>Select a package...</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
             </div>
 
             <!-- Booking Information -->
@@ -174,11 +162,7 @@
 
                     <span>Booking ID</span>
 
-                    <input
-                        type="text"
-                        id="bookingID"
-                        readonly
-                        placeholder="Auto Generated">
+                    <input type="text" id="bookingID" readonly placeholder="Auto Generated">
 
                 </div>
 
@@ -186,11 +170,7 @@
 
                     <span>Booking Date</span>
 
-                    <input
-                        type="text"
-                        id="bookingDate"
-                        readonly
-                        placeholder="Today's Date">
+                    <input type="text" id="bookingDate" readonly placeholder="Today's Date">
 
                 </div>
 
@@ -198,10 +178,7 @@
 
                     <span>Status</span>
 
-                    <input
-                        type="text"
-                        value="Pending Confirmation"
-                        readonly>
+                    <input type="text" value="Pending Confirmation" readonly>
 
                 </div>
 
@@ -223,13 +200,14 @@
 
                 </button>
 
-                
+
 
             </div>
 
         </form>
 
     </section>
-<script src="booking_script.js"></script>
+    <script src="booking_script.js"></script>
 </body>
+
 </html>
