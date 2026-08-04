@@ -1,194 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cosmic Horizon</title>
+
+    <title>The Cosmic Horizon | Luxury Space Hotel</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cosmic Horizon | Customer Portal</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    
-</head>
 <body>
 
-<div class="overlay"></div>
+    <!-- ================= NAVBAR ================= -->
 
-<header>
-    <div class="logo"> 
-        🚀 Cosmic Horizon
-    </div>
-    
     <nav>
-        
-        <a href="#">Home</a>
-        <a href="packages.html" key =_blank>Packages</a>
-        <a href="about_us.html" key =_blank>About Us</a>
-        <a href="#">Facilites</a>
-        <a href="#">Support</a>
-        
+
+        <div class="logo">
+            THE COSMIC HORIZON
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about_us.html">About</a></li>
+            
+            <li><a href="booked_page.html">Booked</a></li>
+
+            <li><a href="booking_page.html">Bookings</a></li>
+
+            <li><a href="packgaes.html">Contact</a></li>
+
+        </ul>
+
     </nav>
-    
-</header>
 
-<section class="hero">
-    
-    <div class="hero-content">
-        
-        <h1>
-            Journey Beyond The Stars
-        </h1>
-        
-        <p>
-            Experience the future of space travel.
-            Book your interstellar adventure in just a few clicks.
-        </p>
-        
-        <div class="buttons">
-            
-            <button class="primary">
-                Start Booking
-            </button>
-            
-            <button class="secondary">
-                Explore Missions
-            </button>
-            
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>THE COSMIC HORIZON</h1>
+
+            <h3>Where Luxury Meets The Universe</h3>
+
+            <p>
+
+                Discover an extraordinary stay among the stars.
+                Experience luxury suites inspired by the planets,
+                breathtaking cosmic interiors, and unforgettable
+                hospitality beyond imagination.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="booking.html" class="btn">
+                    Book Now
+                </a>
+
+                <a href="#about" class="btn-outline">
+                    Explore
+                </a>
+
+            </div>
+
         </div>
-        
-    </div>
-    
-</section>
 
-<section class="booking-card">
-    
-    <h2>Book Your Room</h2>
-    
-    <form>
+    </section>
 
-        <div class="grid">
 
-            <div>
-                
-                <label>Destination- Floor</label>
-                
-                <select>
-                    
-                    <option>Mars</option>
-                    <option>Moon</option>
-                    <option>Europa</option>
-                    <option>Saturn Orbit</option>
-                    
-                </select>
-                
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2>About The Cosmic Horizon</h2>
+
+        <p>
+
+            Welcome to The Cosmic Horizon, the world's first
+            imaginary luxury space hotel.
+
+            Every floor represents a different planet,
+            offering guests a unique interstellar experience
+            filled with futuristic comfort, breathtaking
+            architecture, and world-class hospitality.
+
+        </p>
+
+    </section>
+
+
+    <!-- ================= PLANET FLOORS ================= -->
+
+    <section id="floors">
+
+        <h2>Our Planet Floors</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="images/mercury.jpg" alt="Mercury">
+
+                <h3>Mercury Floor</h3>
+
+                <p>Luxury Executive Rooms with futuristic interiors.</p>
+
             </div>
-            
-            <div>
-                
-                <label>Check-In Date</label>
-                
-                <input type="date">
-                
+
+
+            <div class="card">
+
+                <img src="images/venus.jpg" alt="Venus">
+
+                <h3>Venus Floor</h3>
+
+                <p>Elegant romantic suites for unforgettable stays.</p>
+
             </div>
-            
-            <div>
-                
-                <label>Room(s)</label>
-                
-                <input type="number"
-                min="1"
-                value="1">
-                
+
+
+            <div class="card">
+
+                <img src="images/earth.jpg" alt="Earth">
+
+                <h3>Earth Floor</h3>
+
+                <p>Comfortable family deluxe rooms with premium facilities.</p>
+
             </div>
-            
-            <div>
-                
-                <label>Room - Class</label>
-                
-                <select>
-                    
-                    <option>Economy</option>
-                    <option>Business</option>
-                    <option>Luxury</option>
-                    
-                </select>
-                
+
+
+            <div class="card">
+
+                <img src="images/mars.jpg" alt="Mars">
+
+                <h3>Mars Floor</h3>
+
+                <p>Presidential luxury suites inspired by the Red Planet.</p>
+
             </div>
-            
+
         </div>
-        
-        <button class="search-btn">
-            Search Missions
-        </button>
-        
-    </form>
-    
-</section>
-<img src="space/image.jpeg" alt="">
 
-<section class="features">
-    
-    <div class="card">
-        
-        <div class="icon">🛰</div>
+    </section>
 
-        <h3>Instant Booking</h3>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section id="features">
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>🚀 Space Inspired Rooms</h3>
+
+                <p>Luxury rooms with cosmic interiors and smart technology.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🍽️ Fine Dining</h3>
+
+                <p>Enjoy delicious interstellar-themed cuisine.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🛰️ AI Room Service</h3>
+
+                <p>Fast and intelligent service available 24×7.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🌌 Observatory Deck</h3>
+
+                <p>Witness breathtaking galaxies from our sky observatory.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ROOMS ================= -->
+
+    <section id="rooms">
+
+        <h2>Luxury Rooms</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="images/room1.jpg">
+
+                <h3>Standard Pod</h3>
+
+                <p>₹5,999 / Night</p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/room2.jpg">
+
+                <h3>Galaxy Deluxe Suite</h3>
+
+                <p>₹8,999 / Night</p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/room3.jpg">
+
+                <h3>Nebula Premium Suite</h3>
+
+                <p>₹12,999 / Night</p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/room4.jpg">
+
+                <h3>Black Hole Presidential Suite</h3>
+
+                <p>₹19,999 / Night</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery">
+
+        <h2>Gallery</h2>
+
+        <div class="gallery">
+
+            <img src="images/gallery1.jpg">
+
+            <img src="images/gallery2.jpg">
+
+            <img src="images/gallery3.jpg">
+
+            <img src="images/gallery4.jpg">
+
+            <img src="images/gallery5.jpg">
+
+            <img src="images/gallery6.jpg">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+
+    <section id="stats">
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h1>5000+</h1>
+
+                <p>Happy Guests</p>
+
+            </div>
+
+            <div class="card">
+
+                <h1>250+</h1>
+
+                <p>Luxury Rooms</p>
+
+            </div>
+
+            <div class="card">
+
+                <h1>4</h1>
+
+                <p>Planet Floors</p>
+
+            </div>
+
+            <div class="card">
+
+                <h1>99%</h1>
+
+                <p>Guest Satisfaction</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <h2>Begin Your Journey Through The Stars</h2>
 
         <p>
-            Book your next journey within seconds.
+
+            Book your stay today and experience
+            luxury beyond Earth.
+
         </p>
 
-    </div>
+        <a href="booking_page.html" class="btn">
 
-    <div class="card">
+            Reserve Your Room
 
-        <div class="icon">🌌</div>
+        </a>
 
-        <h3>Premium Destinations</h3>
+    </section>
 
-        <p>
-            Visit breathtaking worlds across the galaxy.
-        </p>
 
-    </div>
+    <!-- ================= CONTACT ================= -->
 
-    <div class="card">
+    <section id="contact">
 
-        <div class="icon">⭐</div>
+        <h2>Contact Us</h2>
 
-        <h3>Secure Payments</h3>
+        <p>Email : info@thecosmichorizon.com</p>
 
-        <p>
-            Protected and encrypted payment system.
-        </p>
+        <p>Phone : +91 98765 43210</p>
 
-    </div>
+        <p>Open 24 Hours | 7 Days a Week</p>
 
-</section>
+    </section>
 
-<footer>
 
-    <h3>Cosmic Horizon</h3>
+    <!-- ================= FOOTER ================= -->
 
-    <p>
-        Your Gateway To The Universe
-    </p>
-</footer>
     <footer>
-    <p>&copy; 2026 Cosmic Horizon. All Rights Reserved. Unauthorized reproduction, distribution, or modification of this website or its content is prohibited.</p>
-</footer>
-    <script src="script.js"></script>
+
+        <h3>THE COSMIC HORIZON</h3>
+
+        <p>Where Luxury Meets The Universe</p>
+
+        <p>
+
+            © 2026 The Cosmic Horizon.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
 </body>
+
 </html>

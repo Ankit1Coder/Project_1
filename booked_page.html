@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Cosmic Horizon | Bookings</title>
+
+    <link rel="stylesheet" href="bookeed_style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>THE COSMIC HORIZON</h1>
+
+        <p>Interstellar Booking Records</p>
+
+    </header>
+
+
+    <main class="container">
+
+        <div class="top-bar">
+
+            <h2>All Bookings</h2>
+
+            <button onclick="window.location.href='index.html'">
+                + New Booking
+            </button>
+            <button id="clearBookings">Clear All Bookings</button>
+
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Booking ID</th>
+
+                    <th>Name</th>
+
+                    <th>Email</th>
+
+                    <th>Phone</th>
+
+                    <th>Guests</th>
+
+                    <th>Check In</th>
+
+                    <th>Check Out</th>
+
+                    <th>Planet Floor</th>
+
+                    <th>Room Type</th>
+
+                    <th>Special Request</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+                <!-- JavaScript will insert bookings here -->
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+    <script src="booked_sscript.js"></script>
+
+</body>
+
+</html>

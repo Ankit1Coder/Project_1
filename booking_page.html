@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cosmic Horizon | Booking</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="booking_style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <h1>THE COSMIC HORIZON</h1>
+        <p>Interstellar Luxury Hotel Booking Portal</p>
+    </header>
+
+    <!-- ================= BOOKING FORM ================= -->
+
+    <section class="booking-container">
+
+        <h2>Book Your Stay</h2>
+
+        <form id="bookingForm">
+
+            <!-- Guest Information -->
+
+            <div class="form-group">
+                <label for="fullname">Guest Name</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+91 XXXXX XXXXX"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input
+                    type="number"
+                    id="guests"
+                    min="1"
+                    max="10"
+                    value="1"
+                    required>
+            </div>
+
+            <!-- Stay Details -->
+
+            <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input
+                    type="date"
+                    id="checkin"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input
+                    type="date"
+                    id="checkout"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="floor">Planet Floor</label>
+
+                <select id="floor" required>
+
+                    <option value="">Select Floor</option>
+
+                    <option>
+                        Floor 1 - Mercury
+                    </option>
+
+                    <option>
+                        Floor 2 - Venus
+                    </option>
+
+                    <option>
+                        Floor 3 - Earth
+                    </option>
+
+                    <option>
+                        Floor 4 - Mars
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="room">
+
+                    Room Type
+
+                </label>
+
+                <select id="room" required>
+
+                    <option value="">
+                        Select Room
+                    </option>
+
+                    <option>
+                        Standard Pod
+                    </option>
+
+                    <option>
+                        Deluxe Galaxy Suite
+                    </option>
+
+                    <option>
+                        Nebula Premium Suite
+                    </option>
+
+                    <option>
+                        Black Hole Luxury Suite
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="request">
+
+                    Special Request
+
+                </label>
+
+                <textarea
+                    id="request"
+                    rows="4"
+                    placeholder="Write your special request here...">
+                </textarea>
+
+            </div>
+
+            <!-- Booking Information -->
+
+            <div class="booking-info">
+
+                <h3>Booking Information</h3>
+
+                <div class="info-row">
+
+                    <span>Booking ID</span>
+
+                    <input
+                        type="text"
+                        id="bookingID"
+                        readonly
+                        placeholder="Auto Generated">
+
+                </div>
+
+                <div class="info-row">
+
+                    <span>Booking Date</span>
+
+                    <input
+                        type="text"
+                        id="bookingDate"
+                        readonly
+                        placeholder="Today's Date">
+
+                </div>
+
+                <div class="info-row">
+
+                    <span>Status</span>
+
+                    <input
+                        type="text"
+                        value="Pending Confirmation"
+                        readonly>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="button-group">
+
+                <button type="submit">
+
+                    Reserve My Room
+
+                </button>
+
+                <button type="reset">
+
+                    Reset
+
+                </button>
+
+                
+
+            </div>
+
+        </form>
+
+    </section>
+<script src="booking_script.js"></script>
+</body>
+</html>
