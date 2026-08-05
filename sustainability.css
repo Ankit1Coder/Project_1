@@ -1,197 +1,290 @@
-/* ==========================
-   GLOBAL
-========================== */
+/* =====================================
+   COSMIC HORIZON - SUSTAINABILITY PAGE
+===================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#ffffff;
 
-    /* Background Image */
     background:
-        linear-gradient(rgba(5,8,22,0.75), rgba(5,8,22,0.75)),
-        url("images/space-bg.jpg");   /* Change this path */
+    linear-gradient(rgba(5,8,22,0.78),rgba(5,8,22,0.78)),
+    url("space/image.jpeg");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    min-height: 100vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
-/* ==========================
-        HERO SECTION
-========================== */
+/* ===========================
+          HERO
+=========================== */
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    padding: 70px 20px 60px;
-    background: transparent;
+.hero{
+    text-align:center;
+    padding:90px 20px 70px;
 }
 
-.hero h1 {
-    color: #6de8ff;
-    font-size: 52px;
-    margin-bottom: 20px;
+.hero h1{
+    font-size:54px;
+    color:#6de8ff;
+    margin-bottom:20px;
+    text-shadow:0 0 15px cyan;
 }
 
-.hero p {
-    color: white;
-    font-size: 20px;
-    line-height: 1.8;
-    max-width: 800px;
+.hero p{
+    max-width:850px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+    color:#f1f1f1;
 }
 
-/* ==========================
-        FEATURE CARDS
-========================== */
+/* ===========================
+        INTRO SECTION
+=========================== */
 
-.features {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 35px;
-    margin: 60px 30px;
+.intro{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    padding:40px;
+
+    background:rgba(16,25,45,0.82);
+    border:2px solid cyan;
+    border-radius:18px;
+    backdrop-filter:blur(8px);
+
+    text-align:center;
 }
 
-.card {
-    width: 280px;
-    background: rgba(16, 25, 45, 0.88);
-    border: 2px solid cyan;
-    border-radius: 18px;
-    overflow: hidden;
-    backdrop-filter: blur(6px);
-
-    transition: 0.35s ease;
+.intro h2{
+    color:#6de8ff;
+    font-size:38px;
+    margin-bottom:20px;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px cyan;
+.intro p{
+    font-size:18px;
+    line-height:1.9;
 }
 
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+/* ===========================
+      FEATURE CARDS
+=========================== */
+
+.features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:35px;
+
+    width:90%;
+    max-width:1400px;
+    margin:60px auto;
 }
 
-.card h3 {
-    text-align: center;
-    color: #6de8ff;
-    padding-top: 18px;
+.card{
+    width:290px;
+
+    background:rgba(17,27,48,.88);
+
+    border:2px solid cyan;
+    border-radius:18px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(6px);
+
+    transition:.35s;
 }
 
-.card p {
-    padding: 20px;
-    line-height: 1.6;
-    text-align: center;
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px cyan;
 }
 
-/* ==========================
-        STATISTICS
-========================== */
-
-.stats {
-    margin: 80px 20px;
-    text-align: center;
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
 }
 
-.stats h2 {
-    color: #6de8ff;
-    font-size: 38px;
+.card h3{
+    color:#6de8ff;
+    text-align:center;
+    margin:20px 10px 15px;
+    font-size:24px;
 }
 
-.stat-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 40px;
+.card p{
+    padding:0 20px 25px;
+    line-height:1.7;
+    text-align:center;
+    color:#eeeeee;
 }
 
-.stat {
-    width: 180px;
-    background: rgba(17, 27, 48, 0.9);
-    border: 2px solid cyan;
-    border-radius: 15px;
-    padding: 25px;
+/* ===========================
+      STATISTICS
+=========================== */
 
-    backdrop-filter: blur(5px);
-
-    transition: 0.3s;
+.stats{
+    text-align:center;
+    margin:90px auto;
+    width:90%;
 }
 
-.stat:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px cyan;
+.stats h2{
+    color:#6de8ff;
+    font-size:42px;
+    margin-bottom:45px;
 }
 
-.stat h3 {
-    font-size: 45px;
-    color: #00ffff;
-    margin-bottom: 10px;
+.stat-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
 }
 
-.stat p {
-    color: white;
+.stat{
+    width:200px;
+    padding:30px 20px;
+
+    background:rgba(17,27,48,.88);
+
+    border:2px solid cyan;
+    border-radius:18px;
+
+    backdrop-filter:blur(5px);
+
+    transition:.3s;
 }
 
-/* ==========================
+.stat:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px cyan;
+}
+
+.stat h3{
+    font-size:48px;
+    color:#00ffff;
+    margin-bottom:12px;
+}
+
+.stat p{
+    font-size:18px;
+}
+
+/* ===========================
         FOOTER
-========================== */
+=========================== */
 
-footer {
-    background: rgba(0, 0, 0, 0.85);
-    text-align: center;
-    padding: 25px;
-    margin-top: 60px;
+footer{
+    margin-top:80px;
+    background:rgba(0,0,0,.85);
+    padding:35px 20px;
+    text-align:center;
 }
 
-/* ==========================
-      RESPONSIVE DESIGN
-========================== */
+.bottom-nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:20px;
+}
 
-@media (max-width: 768px) {
+.bottom-nav a{
+    color:#6de8ff;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
 
-    .hero h1 {
-        font-size: 38px;
-    }
+.bottom-nav a:hover{
+    color:#00ffff;
+    text-shadow:0 0 10px cyan;
+}
 
-    .hero p {
-        font-size: 18px;
-    }
+footer p{
+    color:#cccccc;
+    font-size:15px;
+}
 
-    .features {
-        margin: 40px 15px;
-    }
+/* ===========================
+      SCROLLBAR
+=========================== */
 
-    .card {
-        width: 90%;
-        max-width: 320px;
-    }
+::-webkit-scrollbar{
+    width:10px;
+}
 
-    .stats h2 {
-        font-size: 30px;
-    }
+::-webkit-scrollbar-track{
+    background:#08101d;
+}
 
-    .stat {
-        width: 150px;
-    }
+::-webkit-scrollbar-thumb{
+    background:cyan;
+    border-radius:10px;
+}
 
-    .stat h3 {
-        font-size: 35px;
-    }
+::-webkit-scrollbar-thumb:hover{
+    background:#6de8ff;
+}
+
+/* ===========================
+       RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.intro{
+    padding:30px 20px;
+}
+
+.intro h2{
+    font-size:30px;
+}
+
+.features{
+    gap:25px;
+}
+
+.card{
+    width:95%;
+    max-width:340px;
+}
+
+.stats h2{
+    font-size:32px;
+}
+
+.stat{
+    width:170px;
+}
+
+.stat h3{
+    font-size:38px;
+}
+
+.bottom-nav{
+    flex-direction:column;
+    gap:12px;
+}
+
 }
